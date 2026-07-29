@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Projeto – Polias Fixas e Móveis</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site acessível apresentando o projeto de física sobre polias fixas e móveis.">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            line-height: 1.6;
+            background-color: #ffffff;
+            color: #111111;
+            margin: 0;
+        }
+
+        header, footer {
+            background-color: #580d83;
+            color: #ffffff;
+            padding: 16px;
+        }
+
+        main {
+            padding: 16px;
+        }
+
+        a {
+            color: #580d83;
+        }
+
+        a:focus, a:hover {
+            outline: 2px solid #ffcc00;
+        }
+
+        .secao {
+            margin-bottom: 24px;
+        }
+
+        .skip-link {
+            position: absolute;
+            left: -999px;
+            top: -999px;
+        }
+
+        .skip-link:focus {
+            left: 16px;
+            top: 16px;
+            background-color: #ffff00;
+            color: #000000;
+            padding: 8px;
+            z-index: 1000;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#conteudo-principal" class="skip-link">Ir para o conteúdo principal</a>
+
+    <header role="banner">
+        <h1>Projeto de Física – Polias Fixas e Móveis</h1>
+        <p>Site desenvolvido para apresentar nosso experimento.</p>
+    </header>
+
+    <main id="conteudo-principal" role="main">
+
+        <section class="secao" aria-labelledby="descricao-projeto">
+            <h2 id="descricao-projeto">Descrição do Projeto</h2>
+            <p>
+                Nosso projeto consiste na construção de uma estrutura de papelão contendo 
+                <strong>três polias móveis</strong> e <strong>uma polia fixa</strong>. O objetivo é demonstrar 
+                como diferentes combinações de polias podem alterar o esforço necessário e a direção da força para levantar um peso.
+            </p>
+            <p>
+                A polia fixa é instalada no topo da estrutura, presa em um ponto que não se move. 
+                Já as polias móveis são conectadas entre si e no topo da estrutura e uma é conectada diretamente ao peso, deslocando-se junto com ele durante o movimento.
+            </p>
+            <p>
+                A corda é dividida em 4 partes, uma para ligar o peso a uma das polias e as outras 3 partes para sustentar as polias e liga-las entre si, onde a corda passa pela polia com um dos seus lados fixados ao teto da estrutura e o outro fixado ao meio da polia móvel seguinte. Na terceira polia móvel, a última, a corda, ao invés de se fixar a próxima polia, passa pela polia fixa, mudando de direção e saindo da estrutura por onde será puxada. 
+            </p>
+        </section>
+ <figure>
+    <img src="imagens/imagens/20260728_155414_0000.png"
+         alt="A figura apresenta o desenho de um sistema de polias com uma polia fixa no centro do topo da estrutura, e três polias móveis alinhadas verticalmente à esquerda. Uma corda contínua percorrem todas as polias e termina em um peso cúbico suspenso na parte inferior.">
+    <figcaption>
+        Esboço do sistema de polias com uma polia fixa no centro do topo da estrutura e três polias móveis descendo à esquerda, conectadas por uma corda contínua que sustenta um peso cúbico na base.
+    </figcaption>
+</figure>
+
+
+        <section class="secao" aria-labelledby="etapas">
+            <h2 id="etapas">Etapas da Montagem</h2>
+            <ol>
+                <li>Construção da estrutura de papelão que sustenta as polias.</li>
+                <li>Fixação da polia fixa no topo da estrutura.</li>
+                <li>Instalação das polias móveis.</li>
+                <li>Instalação do peso conectado às polias.</li>
+                <li>Passagem da corda por todas as polias, ligando cada uma à próxima.</li>
+                <li>Teste de levantamento do peso utilizando o sistema completo.</li>
+                <li>Registro de fotos e vídeos mostrando o funcionamento.</li>
+            </ol>
+        </section>
+
+        <section class="secao" aria-labelledby="midias">
+            <h2 id="midias">Fotos e Vídeos do Projeto</h2>
+
+            <figure>
+                <img src="imagens/polias_fixas.jpg"
+                     alt="*Descrição da imagem*">
+                <figcaption>*Descrição da imagem*</figcaption>
+            </figure>
+
+            <figure>
+                <img src="imagens/polia_movel.jpg"
+                     alt="*Descrição da imagem*">
+                <figcaption>*Descrição da imagem*</figcaption>
+            </figure>
+
+            <figure>
+                <img src="imagens/sistema_completo.jpg"
+                     alt="*Descrição da imagem*">
+                <figcaption>*Descrição da imagem*</figcaption>
+            </figure>
+
+            <figure>
+                <figcaption>Vídeo – Funcionamento do sistema de polias.</figcaption>
+                <video controls aria-describedby="descricao-video">
+                    <source src="videos/demonstracao.mp4" type="video/mp4">
+                    Seu navegador não suporta o elemento de vídeo.
+                </video>
+                <p id="descricao-video">
+                    *Descrição do vídeo*
+                </p>
+            </figure>
+        </section>
+
+    </main>
+
+    <footer role="contentinfo">
+        <p>Equipe: Emanuelly,  Kelly Jean, Samuel Nº36, Samuel Nº37 e Samuel Nº38</p>
+        <p>Disciplina: Física</p>
+        <p>Ano: 2026</p>
+    </footer>
+
+</body>
+</html>
